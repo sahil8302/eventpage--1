@@ -39,15 +39,12 @@ scroll-behavior: smooth;
 
 .arrow-btn{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background-color: gray;
   color: black;
   font-size: 40px;
-  border-radius: 50%;
-  text-align: center;
+  border-radius: 100%;
   position: sticky;
   z-index: 10;
   display: none;
@@ -61,19 +58,14 @@ scroll-behavior: smooth;
 }
 
 
-
-
-
-
-
-
-
 /* Header */
 header {
   background-image: url(../assets/images/Rectangle\ 56.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 372px;
+  position: absolute;
+  top: 0;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -84,7 +76,6 @@ header {
   padding-left: 24px;
   padding-right: 24px;
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
- background-color: rgba(0, 0, 0, 0.827);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -92,7 +83,7 @@ header {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-    z-index: 10;
+  z-index: 10;
   position: sticky;
   top:0;
   left: 0;
@@ -100,6 +91,14 @@ header {
   
 
 
+}
+
+.navbar.nav-colored{
+   background-color: rgba(0, 0, 0, 0.827);
+}
+
+.navbar.nav-transparent{
+  background-color: transparent;
 }
 
 .menubar a {
@@ -234,13 +233,18 @@ nav ul li a:focus-visible {
 
 
 /* Main section */
+
+main{
+  z-index: 1;
+  margin-top: 300px;
+}
 .container {
   width: 100%;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 76px;
-  margin-bottom: 156px;
+  margin-bottom: 156px;;
 
 }
 
